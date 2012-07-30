@@ -1,5 +1,9 @@
-
+#summary
 one example, show how to swap erlang code online include inner state record 
+
+first, we have gen server swap_test
+this is counter program, each call will show inner state counter, than incrment this counter.
+now, we need change code, can set random step, but gen process cant stop, so need online swap code
 
 #step
 
@@ -31,5 +35,5 @@ one example, show how to swap erlang code online include inner state record
 
 >swap_test:test_call().
 
-
+now we set step = 3
 
