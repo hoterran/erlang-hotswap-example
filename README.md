@@ -1,12 +1,16 @@
-#Example1
+# Example1
 
-show how to swap erlang code online include inner state record 
+show how to upgrade erlang code online, which include inner state record change. 
 
-first, we have gen server swap_test
-this is counter program, each call will show inner state counter, than incrment this counter.
-now, we need change code, can set random step, but gen process cant stop, so need online swap code
+first, we have a gen server swap_test.
 
-##step
+this is counter program, each call will show inner state counter, than incrment this counter, step is 1.
+
+now, we need change code, can setup random step, with running gen process.
+
+## step
+
+swap_test1.erl is old version code, swap_test2.erl is new version.
 
 >os:cmd("cp swap_test1.erl swap_test.erl").
 
@@ -36,13 +40,11 @@ now, we need change code, can set random step, but gen process cant stop, so nee
 
 >swap_test:test_call().
 
-now we set step = 3
-
+now the new step become 3 .
 
 ##code 
 
-
-you can see this blog for [detail](http://www.hoterran.info/erlang-otp-sys-sourcecode)
+you can see this chinese blog for [detail](http://www.hoterran.info/erlang-otp-sys-sourcecode)
 
 
 #Example2
